@@ -1,0 +1,183 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+.navbar-container
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.list
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.button-group
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navbar-container div img
+{
+    height: 40px;
+}
+.list .list-item
+{
+    font-family: 'Orbitron';
+    font-size: 20px;
+    font-weight: 500;
+    color:#444;
+    margin-right: 45px;
+}
+.list .list-item:hover
+{
+    color:#000000;
+    font-weight: 600;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.list-item::after
+{
+    content: '';
+    background-color: black;
+    display: block;
+    transform-origin: bottom center;
+    width: 0%;
+    height: 2.5px;
+    margin: auto;
+    transition: width 0.3s ease-in-out 0s;
+}
+.list-item:hover::after
+{
+    width: 60%;
+}
+
+.search-icon svg
+{
+    height: 28px;
+    margin-right: 20px;
+    margin-top: 2px;
+}
+.nav-button, .button-email
+{
+    background-color: #ffffff;
+    padding: 6px 50px;
+    border-radius: 12px;
+    color:#444;
+    font-size: 20px;
+    font-weight: 500;
+    border:3px solid #000000;
+}
+.hero-container
+{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+.hero-container-right
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin-left: auto;
+    margin-top: 10%;
+}
+.square img
+{
+    height: 300px;
+    position: absolute;
+    top:54%;
+    left:12.5%;
+    bottom:0;
+}
+.star:nth-child(1n) img
+{
+    height: 50px;
+    position: absolute;
+    top: 17%;
+    right: 5%;
+}
+.star:nth-child(2n) img
+{
+    height: 40px;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+}
+.globe img
+{
+    height: 60px;
+    position: absolute;
+    left:50%;
+    top:8%;
+}
+.person img
+{
+    height: 500px;
+    z-index: 10000;
+    position: absolute;
+    left: 0;
+    top:15%;
+}
+.hero-heading
+{
+    font-family: 'Orbitron';
+    font-size: 50px;
+    font-weight: 700;
+}
+.hero-description, .contact-heading
+{
+    font-family: 'poppins';
+    font-size: 14px;
+    color: #444;
+}
+.button-email
+{
+    padding: 4px 35px;
+    font-family: 'Orbitron';
+    border:2px solid #000000;
+}
+.button-join
+{
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #000000;
+    font-family: 'Orbitron';
+    border-radius: 6px;
+    margin-left: 10px;
+}
+.contact-heading
+{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 80px;
+}
+.icons span img
+{
+    height: 35px;
+}
+.hero-description
+{
+    margin-bottom: 70px;
+    width: 73%;
+    text-align: center;
+}
